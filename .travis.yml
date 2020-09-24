@@ -6,8 +6,8 @@ install:
   - pip install pipenv 
   - pipenv install --dev
 script:
-  # - pipenv run pylint discordbot shared
-  - pipenv run mypy --ignore-missing-imports --disallow-untyped-calls --disallow-incomplete-defs .
+  - pipenv run flake8 discordbot shared
+  - pipenv run mypy .
 notifications:
     webhooks: https://www.travisbuddy.com/?insertMode=update
     on_success: never
