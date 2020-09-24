@@ -8,6 +8,7 @@ install:
 script:
   - pipenv run flake8 discordbot shared
   - pipenv run mypy .
+  - pipenv run pytest tests/
 notifications:
     webhooks: https://www.travisbuddy.com/?insertMode=update
     on_success: never
