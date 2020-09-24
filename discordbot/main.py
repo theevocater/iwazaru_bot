@@ -85,12 +85,12 @@ class Bot(discord.Client):
     async def on_ready(self) -> None:
         print(
             'Logged in as {username} ({id})'.format(
-            username=self.user.name, id=self.user.id,
+                username=self.user.name, id=self.user.id,
             ),
         )
         print(
             'Connected to {}'.format(
-            ', '.join([server.name for server in self.guilds]),
+                ', '.join([server.name for server in self.guilds]),
             ),
         )
         print('--------')

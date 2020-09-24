@@ -6,7 +6,7 @@ install:
   - pip install pipenv 
   - pipenv install --dev
 script:
-  - pipenv run flake8 discordbot shared
+  - pipenv run flake8 .
   - pipenv run mypy .
   - pipenv run pytest tests/
 notifications:
